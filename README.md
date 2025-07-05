@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛒 TAVEVE STORE - E-Commerce Aplikasi Premium Legal
 
-## Getting Started
+**TAVEVE STORE** adalah proyek E-Commerce sederhana berbasis **Next.js App Router** dan **Tailwind CSS** yang menjual berbagai **aplikasi digital premium 100% legal** seperti Netflix, Canva, dan lainnya.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Fitur Utama
+
+- ✅ Halaman Home dengan efek ketik dinamis
+- ✅ Daftar produk dari API (https://fakestoreapi.com)
+- ✅ Filter kategori: Streaming, AI, Education
+- ✅ Halaman detail produk
+- ✅ Sistem keranjang belanja (Cart)
+- ✅ Checkout langsung ke WhatsApp
+- ✅ Halaman kontak → kirim pesan ke WhatsApp
+- ✅ UI bersih, responsif, dan konsisten dengan branding `#fe9313`
+- ✅ Menggunakan `Poppins` untuk heading dan `Lato` untuk body text
+
+---
+
+## 🛠️ Teknologi
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **State Management:** React Context API
+- **API Produk:** [FakeStoreAPI](https://fakestoreapi.com/)
+- **Checkout:** WhatsApp Redirect (`wa.me`)
+
+---
+
+## 📁 Struktur Proyek
+
+```
+src/
+├── app/
+│   ├── page.js                # Halaman home
+│   ├── products/page.js       # Daftar produk
+│   ├── product/[id]/page.js   # Detail produk
+│   ├── cart/page.js           # Keranjang + Checkout ke WhatsApp
+│   ├── contact/page.js        # Halaman hubungi kami
+│
+├── components/
+│   ├── Navbar.js              # Navigasi atas
+│   ├── Footer.js              # Footer brand
+│   └── ProductCard.js         # Kartu produk
+│
+├── context/
+│   └── CartContext.js         # Global cart state
+│
+├── styles/
+│   └── globals.css            # Styling dasar
+│
+├── tailwind.config.js         # Konfigurasi Tailwind
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Cara Menjalankan Proyek di Lokal
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 1. Clone repository
+git clone https://github.com/username/taveve-store.git
+cd taveve-store
 
-## Learn More
+# 2. Install dependensi
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# 3. Jalankan di lokal
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Akses di: [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📲 WhatsApp Checkout
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Checkout produk akan langsung membuka WhatsApp dengan isi pesan otomatis:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+Halo! Saya ingin memesan:
+- Netflix Premium
+- Canva Pro 6 bulan
+
+Total: Rp xxx.xxx
+```
+
+---
+
+## 🙌 Kontribusi
+
+Proyek ini dibuat sebagai mini-project pribadi untuk pembelajaran Web Development menggunakan Next.js.  
+Jika kamu ingin mengembangkan fitur seperti payment gateway, admin panel, atau autentikasi, feel free to fork & explore!
+
+---
+
+## 📄 Lisensi
+
+MIT License — bebas digunakan dan dimodifikasi.
