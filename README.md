@@ -60,7 +60,7 @@ src/
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/username/taveve-store.git
+git clone https://github.com/sofwanrsd/Aplikasi-Jualan-Simple
 cd taveve-store
 
 # 2. Install dependensi
